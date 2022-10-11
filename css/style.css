@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css; */
+ 
+/* Verdanderd alles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Soort class voor alles om het sneller te maken*/
+:root{
+  --text-color: rgb(0, 169, 23);
+  --text-font-family: 'Montserrat', sans-serif;
+}
+
+/* Dit is om de nav bar te veranderen*/
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 15%;
+
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: left;
+  margin: 10px 0px 0px -200px;
+}
+
+.nav_knop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px 0px 0px;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: var(--text-color);
+  padding: 10px;
+}
+ /* Verander je alle knoppen mee */
+button {
+  padding: 8px 15px;
+  background-color: var(--text-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/* Wat er gebeurd als je over de knop heen gaat */
+button:hover {
+  background-color: rgba(0, 139, 5, 0.651);
+}
+
+.account a:hover {
+  color: #00cc00;
+}
+
+/* Hier kan je de foto veranderen om de begin pagina 'de grote foto' */
+.fotoUithoorn {
+	color: transparent;
+  max-width: 80%;
+  padding: 30px;
+  margin: 10px 150px 400px 150px;
+  cursor: pointer;
+  border: 2px ; 
+  border-radius: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li_h1{
+  font-size: 25px;
+  margin: 0px 0px 0px 300px
+}
+
+/* button:focus-within .dropdown {
+  opacity: 1;
+  visibility: visible;
+} */
+
+ /* om de hele ul te veranderen waar de 3 links naar de website staan */
+#ul_fotos {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.foto_pj {
+	color: transparent;
+  max-width: 65%;
+  padding: 30px;
+  margin: 10px 150px 0px 260px;
+  cursor: pointer;
+  border: 2px ; 
+  border-radius: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto_sc{
+	color: transparent;
+  max-width: 65%;
+  padding: 30px;
+  margin: 10px 150px 0px 260px;
+  cursor: pointer;
+  border: 2px ; 
+  border-radius: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto_se{
+	color: transparent;
+  max-width: 65%;
+  padding: 30px;
+  margin: 10px 150px 0px 260px;
+  cursor: pointer;
+  border: 2px ; 
+  border-radius: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.knop_fotos{
+  margin: 10px 150px 0px 285px;
+  cursor: pointer;
+}
+
+/* Gedeelte Politiek-juridisch */
+.stuk_pj{
+  font-family: var(--text-font-family);
+  color: white;
+}
+.tekst_pj{
+  font-family: var(--text-font-family);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: right;
+}
+/* Gedeelde Sociaal-cultureel */
+/* Gedeelde Politiekeconomisch */
