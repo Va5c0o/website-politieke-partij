@@ -1,28 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Politieke partij</title>
+<!DOCTYPE html>    
+<html>    
+<head>    
+  <title>Login pagina</title>
   <meta charset= "UTF-8">
   <meta name= "description" content= "Zelf gemaakte politieke partij in HTML/CSS en PHP">
   <meta name= "Keywords" content= "politieke partij, HTML/CSS, PHP">
   <meta name= "author" content= "Vasco Overes">
   <meta name= "Viewport" content= "width=device-width, initial-scale= 1.0">
   <meta http-equiv="Refresh" content="30">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <link rel="stylesheet" href="../css/style.css"> 
+</head>   
+<style>
+  body  {  
+    margin: 0;  
+    padding: 0;  
+    background-color: #24252A;  
+    font-family: 'Arial';  
+  }  
+  .login{  
+          width: 382px;  
+          overflow: hidden;  
+          margin: auto;  
+          margin: 20 0 0 450px;  
+          padding: 80px;  
+          background: #23463f;  
+          border-radius: 15px ;  
+            
+  }  
+  h2{  
+      text-align: center;  
+      color: #ffffff;  
+      padding: 20px;  
+  }  
+  label{  
+      color: #ffffff;  
+      font-size: 17px;  
+  }  
+  #Uname{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 3px;  
+      padding-left: 8px;  
+  }  
+  #Pass{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 3px;  
+      padding-left: 8px;  
+        
+  }  
+  #log{  
+      width: 300px;  
+      height: 30px;  
+      border: none;  
+      border-radius: 17px;  
+      padding-left: 7px;  
+      color: ;  
+    
+    
+  }  
+  span{  
+      color: white;  
+      font-size: 17px;  
+  }  
+  a{  
+      float: right;  
+      background-color: grey;  
+  }
+</style> 
+<body>   
   <header>
-    <img class="logo" src="../images/logo2.png" alt="logo">
-    <nav>
-      <ul class="nav_links">
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../navbar/Politiek-juridisch.html">Politiek-juridisch</a></li>
-        <li><a href="../navbar/Sociaal-cultureel.html">Sociaal-cultureel</a></li>
-        <li><a href="../navbar/Sociaaleconomisch.html">Sociaaleconomisch</a></li>
+    <img class="logo" src="../images/logo3.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav_links" href="../html/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav_links" href="../navbar/Politiek-juridisch.html">Politiek-juridisch</a></li>
+          <li class="nav-item"><a class="nav_links" href="../navbar/Sociaal-cultureel.html">Sociaal-cultureel</a></li>
+          <li class="nav-item"><a class="nav_links" href="../navbar/Sociaaleconomisch.html">Sociaaleconomisch</a></li>
+          <li class="nav-item"><a class="nav_links" href="../navbar/kamerleden.html">Kamerleden</a></li>
+          <li class="nav-item"></li>
       </ul>
-    </nav>
-    <a class="cta" href="../navbar/contact.html"><button>Contact</button></a>
-    <a class="account" href="../navbar/aanmelden.html">Aanmelden</a>
-  </header>
-</body>
+      </nav>
+      <div class="nav_knoppen">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item"></li><a class="nav_links"href="../navbar/contact.html"><button>Contact</button></a></li> -->
+          <li class="nav-item"></li><a class="nav_links" href="../navbar/aanmelden.html"><button>Aanmelden</button></a></li>
+        </ul>
+      </div>
+    </header> 
+    <h2>Login pagina</h2><br>    
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>Gebruikersnaam     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Wachtwoord 
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In Here">       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>    
+    </form>     
+</div>    
+</body>    
 </html>

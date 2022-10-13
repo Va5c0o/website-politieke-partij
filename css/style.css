@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 /* https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css; */
  
@@ -6,62 +8,84 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A;
-  font-family: 'Montserrat', sans-serif;
+  /* background-color: #24252A; */
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
+body{
+  background-color: #24252A;
+}
 /* Soort class voor alles om het sneller te maken*/
 :root{
   --text-color: rgb(0, 169, 23);
-  --text-font-family: 'Montserrat', sans-serif;
+  --text-font-family: Montserrat,sans-serif;;
 }
 
 /* Dit is om de nav bar te veranderen*/
 li, a, button {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   color: #ecf0f1;
   text-decoration: none;
 }
 
 header {
+  justify-content: space-evenly;
+  padding: 40px 60px 20px 0px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 30px 15%;
-
+  border-style: solid;
+  background-color: #24252A;
 }
 
 .logo {
   cursor: pointer;
-  display: flex;
+  display: inline;
   align-items: left;
-  margin: 10px 0px 0px -200px;
+  justify-content: left;
+  margin: -10px;
+  padding-bottom: 20px;
+  justify-content: left;
 }
 
-.nav_knop{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 10px 0px 0px;
+.nav-item{
+  display: inline;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.nav_knoppen{
+  display: inline-block;
+  align-items: right;
+  justify-content: space-evenly;
+  margin: -10px;
 }
 
 .nav_links li{
   display: inline-block;
-  padding: 0px 20px 0px 20px;
+  padding: 10px ;
+  justify-content: space-around;
 }
+
+/* .nav_links li{
+  display: inline-block;
+  padding: 0px 0px 0px 15px;
+  justify-content: space-around;
+} */
 
 .nav_links li a{
-  transition: all 0.3s ease 0s;
+  transition: all 0.43s ease 0s;
 }
 
-.nav_links li a:hover{
+.nav_links:hover{
   color: var(--text-color);
-  padding: 10px;
+  padding: 3px;
+  transition: all 0.43s ease 0s;
 }
  /* Verander je alle knoppen mee */
 button {
-  padding: 8px 15px;
+  padding: 8px 8px;
+  margin: 1px 1px;
   background-color: var(--text-color);
   border-radius: 20px;
   cursor: pointer;
@@ -76,23 +100,53 @@ button:hover {
   color: #00cc00;
 }
 
+.card_uithoorn{
+  display: flex;
+  padding: 30px;
+} 
+.begin_tekst{
+  font-size: 60px;
+}
+
+.card_tekst{
+  position: relative;
+  margin: 180px 0px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 25px;
+  font-style: bold;
+  font-size: 15px;
+}
 /* Hier kan je de foto veranderen om de begin pagina 'de grote foto' */
 .fotoUithoorn {
-	color: transparent;
   max-width: 80%;
-  padding: 30px;
-  margin: 10px 150px 400px 150px;
+  max-width: 50% ;
+  padding: 0px;
+  margin: 100px 0px 200px 0px;
   cursor: pointer;
   border: 2px ; 
   border-radius: 50px 50px;
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-content: left;
+}
+.h1-stuk-foto{
+  display: flex;
+  margin: 400px 0px 0px 0px;
+  font-size: 30px;
   justify-content: center;
+  background-color: #24252A;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: ;
 }
 
 .li_h1{
   font-size: 25px;
-  margin: 0px 0px 0px 300px
+  margin: 0px 0px 0px 300px;
+  text-decoration: none;
+  padding: none;
+  
 }
 
 /* button:focus-within .dropdown {
@@ -103,13 +157,19 @@ button:hover {
  /* om de hele ul te veranderen waar de 3 links naar de website staan */
 #ul_fotos {
   font-family: 'Montserrat', sans-serif;
+  background-color: #24252A;
+  
+}
+.ul_pj{
+  margin: 0px 150px 0px 0px;
+  background-color: #24252A;
 }
 
 .foto_pj {
 	color: transparent;
   max-width: 65%;
   padding: 30px;
-  margin: 10px 150px 0px 260px;
+  margin: 0px 150px 0px 260px;
   cursor: pointer;
   border: 2px ; 
   border-radius: 50px 50px;
@@ -145,7 +205,7 @@ button:hover {
 }
 
 .knop_fotos{
-  margin: 10px 150px 0px 285px;
+  margin: 0px 0px 0px 30px;
   cursor: pointer;
 }
 
@@ -153,13 +213,30 @@ button:hover {
 .stuk_pj{
   font-family: var(--text-font-family);
   color: white;
+  display: flexbox;
+  align-items: right;
 }
 .tekst_pj{
   font-family: var(--text-font-family);
   color: white;
-  font-size: 20px;
-  display: flex;
+  font-size: 10px;
+  display: flexbox;
   align-items: right;
 }
 /* Gedeelde Sociaal-cultureel */
 /* Gedeelde Politiekeconomisch */
+/* footer */
+.footer {
+  position:static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  text-decoration-color: white;
+  padding-bottom: 30px;
+}
+
+/* aanmedling page */
+
