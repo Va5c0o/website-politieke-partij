@@ -16,25 +16,46 @@
   <style>
 
     body{
-      background-image: url('../images/skeyes_jpeg_uithoorn-6712-scaled.jpeg');
-      /* background-attachment: fixed; */
-      background-size: 100% 35%;
+      background-image: url('../images/ivn_drvu_wb_-_natuur._zijdelmeer_leadfoto_maart.jpg');
+      /* background-image: linear-gradient( #121212, rgb(47, 46, 46)); */
+      background-size: 100% 30%;
+      background-color: rgb(234, 234, 234);
+      border: 15px solid transparent;
+      border-image-repeat: stretch;
       background-repeat: no-repeat
-      
     }
 
   </style> 
   <header>
-  <img class="logo" src="../images/logo3.png" alt="logo">
+  <img class="logo" src="../images/logo.png" alt="logo" href="../html/index.html">
+  <!-- <h1 class="logo">PVU</h1> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav_links" href="../html/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav_links" href="../navbar/Politiek-juridisch.html">Politiek-juridisch</a></li>
-        <li class="nav-item"><a class="nav_links" href="../navbar/Sociaal-cultureel.html">Sociaal-cultureel</a></li>
-        <li class="nav-item"><a class="nav_links" href="../navbar/Sociaaleconomisch.html">Sociaaleconomisch</a></li>
-        <li class="nav-item"><a class="nav_links" href="../navbar/kamerleden.html">Kamerleden</a></li>
-        <li class="nav-item"></li>
+        <div class="dropdown">
+          <a class="dropbtn" href="../navbar/Politiek-juridisch.html">Politiek-juridisch</a>
+          <!-- <div class="dropdown-content">
+          </div> -->
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn" href="../navbar/Sociaal-cultureel.html">Sociaal-cultureel</a>
+          <!-- <div class="dropdown-content">
+          </div> -->
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn" href="../navbar/Sociaaleconomisch.html">Sociaaleconomisch</a>
+          <!-- <div class="dropdown-content">
+          </div> -->
+        </div>     
+        <li class="nav-item"><a class="nav_links" href="../navbar/agenda.html">Agenda</a></li>
+        <div class="dropdown">
+          <a class="dropbtn" href="../navbar/onze mensen/tweedekamer.html">Onze mensen</a>
+          <div class="dropdown-content">
+          <a href="../navbar/onze mensen/tweedekamer.html">Tweede Kamerfractie</a>
+          </div>
+
+        </div>
     </ul>
     </nav>
     <div class="nav_knoppen">
@@ -44,38 +65,82 @@
       </ul>
     </div>
   </header>
-  <div class="card_uithoorn">
-    <!-- <img class="fotoUithoorn" src="../images/skeyes_jpeg_uithoorn-6712-scaled.jpeg" alt="">   -->
-    <div class="card_tekst">
-      <h1 class="begin_tekst">Het beste uit Uithoorn halen!</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quam, adipisci consequatur exercitationem sint
-          illum vel qui doloremque inventore odit beatae nulla recusandae alias non nostrum. Temporibus possimus a est?
-        </p>
-    </div>
-  </div>
   <div class="h1-stuk-foto">
-    <h1>Wat hebben we meer?</h1>
-    <br><br><br><br><br><br><br><br>
+    <h2>Wat hebben we meer?</h2>
   </div>
-  <div id="ul_fotos">
-    <ul>
-      <li class="ul_pj"><h1 class="li_h1">Politiek-juridisch<a href="../navbar/Politiek-juridisch.html"><button class="knop_fotos">Bekijk meer</button></a></h1></li>
-      <img class="foto_pj" src="../images/politiekjuridisch.jpeg" alt="">
-      <li class="ul_sc"><h1 class="li_h1">Sociaal-cultureel<a href="../navbar/Sociaal-cultureel.html"><button class="knop_fotos">Bekijk meer</button></a></h1></li>
-      <img class="foto_sc" src="../images/sociaal-cultureel.jpeg" alt="">
-      <li class="ul_se"><h1 class="li_h1">Sociaaleconomisch<a href="../navbar/Sociaaleconomisch.html"><button class="knop_fotos">Bekijk meer</button></a></h1></li>
-      <img class="foto_se" src="../images/sociaaleconomisch.jpeg" alt="">
-    </ul>
+
+  <div class="block">
+    <a href="../navbar/Politiek-juridisch.html">
+      <h2 class="h2_block">Politiek-juridisch</h2>
+        <img class="foto_block" src="../images/politiekjuridisch.jpeg" alt="">
+          <span class="span_block">Links en rechts zijn woorden die veel worden gebruikt om op een simpele manier politieke partijen in te delen. De
+            werkelijkheid is vaak....</span>
+            <button class="button_block" href="../navbar/Politiek-juridisch.html">Bekijk meer</button>
+    </a>
+  </div>
+
+  <div class="block">
+    <a href="../navbar/Sociaal-cultureel.html">
+      <h2 class="h2_block">Sociaal-cultureel</h2>
+        <img class="foto_block" src="../images/Sociaal-cultureel.jpeg" alt="">
+          <span class="span_block">          Het huidige asielbeleid is niet meer vol te houden. Tussen de asielzoekers zitten te veel gelukszoekers die hier geen
+            recht op....</span>
+            <button class="button_block" href="../navba/Sociaal-cultureel.html">Bekijk meer</button>
+    </a>
+  </div>
+
+  <div class="block">
+    <a href="../navbar/Sociaaleconomisch.html">
+      <h2 class="h2_block">Sociaaleconomisch</h2>
+        <img class="foto_block" src="../images/Sociaaleconomisch.jpeg" alt="">
+          <span class="span_block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus a, distinctio inventore repudiandae.....</span>
+            <button class="button_block" href="../navbar/Sociaaleconomisch.html">Bekijk meer</button>
+    </a>
+  </div>
+
+  <div class="block">
+    <a href="../navbar/kamerleden.html">
+      <h2 class="h2_block">Onze mensen</h2>
+        <img class="foto_block" src="../images/kamerleden.jpeg" alt="">
+          <span class="span_block">Mohammad bin Salman al-Saoed, 37 jaar, is geboren in Riyad, Saudi-Arabië. Na zijn werk als kroonprins van Saudi-Arabië......</span>
+            <button class="button_block" href="../navbar/kamerleden.html">Bekijk meer</button>
+    </a>
+  </div>
+
+  <div class="block">
+    <a href="../navbar/agenda.html">
+      <h2 class="h2_block">Agenda</h2>
+        <img class="foto_block" src="../images/agenda-delen.webp" alt="">
+        <br><br>
+        <span class="span_block">
+          Klik hier om de datum van vandaag te zien.
+        </span>  
+        <br><br>
+        <button class="button_block" href="../navbar/agenda.html">Bekijk meer</button>
+    </a>
+  </div>
+
+  <div class="block">
+    <a href="../navbar/aanmelden.html">
+      <h2 class="h2_block">Aanmelden</h2>
+        <img class="foto_block" src="../images/aanmelden.jpg" alt="">
+        <br><br>
+        <span class="span_block">
+          Klik hier om je nu bij ons aan te melden.
+        </span>  
+        <br><br>
+            <button class="button_block" href="../navbar/aanmelden.html">Bekijk meer</button>
+    </a>
   </div>
   <footer class="footer">
     <div class="footer_terms">
       <ul class="navbar-nav">
-        <li><p>© 2022 | Partij voor Uithoornnaars | Vasco Overes | Alle Rechten Voorbehouden</p></li>
+        <li><p>© 2022 | Partij voor Uithoornaars | Vasco Overes | Alle Rechten Voorbehouden</p></li>
         <li><a href="mailto:vascooveres@gmail.com">vascooveres@gmail.com</a></li>
         <li class="nav-item"><a href="../footer/privacyprotocol.html">Privacy & Cookie Protocol.</a></li>
+        <br>
         <li class="nav-item"><a href="../footer/privacyprotocol.html">Disclaimer.</a></li>        
-        <li>Made by webdesigner Vasco Overes</li>
+        <li>Made by webdesigner Vasco Overes.</li>
       </ul>
     </div>
   </footer>

@@ -83,6 +83,10 @@
     color: black;
   }
 
+  #vrouw{
+    padding-left: 10px;
+  }
+
   span{  
     color: black;
     font-size: 10px;  
@@ -90,7 +94,6 @@
 
   .link_pw{  
     float: left;  
-    margin-bottom: ;
     color: rgb(0, 169, 23);
   }
 
@@ -98,7 +101,7 @@
     color: rgba(0, 169, 23, 0.934);
   }
   
-  .sing-up-knop{
+  .sing-up-knop a{
     color: rgb(0, 169, 23);
   }
 
@@ -158,37 +161,71 @@
     </header> 
     <div class="login">    
     <form id="login" method="get" action="login.php">    
-        <h1>Login pagina</h2><br>    
+        <h1>Aanmeld pagina</h2><br>    
         <label>
           <b>
-            E-mail     
+            Naam     
           </b>    
         </label>   
-        <input type="text" name="Uname" id="Uname" placeholder="E-mailadres">    
+        <input type="text" name="Uname" id="Uname" placeholder="Naam">    
         <br><br>    
         <label>
           <b>
-            Wachtwoord 
+            Adres
           </b>    
         </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Wachtwoord">    
-        <br><br>
-        <input type="checkbox" name="" id="" placeholder="">
+        <input type="Password" name="Pass" id="Pass" placeholder="Adres">    
+        <br><br>    
+        <label>
+        <b>
+          Postcode
+        </b>    
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Postcode">   
+        <br><br>    
         <label>
           <b>
-            Remember me
-          </b>
-        </label>
-        <br><br>
-        <input type="button" name="log" id="log" value="Log In">       
+            Woonplaats
+          </b>    
+        </label>     
+        <input type="text" name="Uname" id="Uname" placeholder="Woonplaats">   
         <br><br>    
-        <a class="link_pw" href="#">Wachtwoord vergeten?</a>    
+        <label>
+          <b>
+            Gesclacht
+          </b>    
+        </label>  
+        <br>
+        <input type="checkbox" id="Man" value="Man">
+        <label>Man</label>
+        <input type="checkbox" id="Vrouw" value="Vrouw">
+        <label>Vrouw</label>        
+        <br><br>      
+        <label>
+          <b>
+            Opleiding
+          </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="opleiding">
+        <br><br>    
+        <label>
+          <b>
+            Werk
+          </b>    
+        </label>   
+        <input type="text" name="Uname" id="Uname" placeholder="Werk">
+        <br><br>    
+        <label>
+          <b>
+            Rekeningnummer
+          </b>    
+        </label>   
+        <input type="text" name="Uname" id="Uname" placeholder="rekeningnummer">     
+        <br><br>           
+        <input type="button" name="log" id="log" value="Maak account">       
+        <br><br>    
     </form>     
 </div>    
-<br>
-<div class="sign-up-page">
-  <p>Nog geen account? <a class="sign-up-knop" href="Sign-up.html">Maak hier een account</a></p>
-</div>
 </body>    
 <footer class="footer">
   <div class="footer_terms">
